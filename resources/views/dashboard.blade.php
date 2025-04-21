@@ -6,62 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
+            padding: 40px 20px;
+            background-color: #eef1f4;
+            color: #333;
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
         }
 
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
         }
 
         h1 {
-            color: #333;
+            font-size: 28px;
+            color: #222;
             margin: 0;
         }
 
+        form button {
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        form button:hover {
+            background-color: #e03b3b;
+        }
+
         .user-info {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
+            background-color: #f7f9fb;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .user-info h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #444;
         }
 
         .user-info p {
-            margin: 5px 0;
+            margin: 6px 0;
+            font-size: 15px;
         }
 
-        button {
-            background-color: #dc3545;
-            color: white;
-            padding: 8px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #c82333;
-        }
-
-        .content {
-            padding: 20px 0;
+        .content h2 {
+            font-size: 20px;
+            margin-top: 0;
         }
     </style>
 </head>
@@ -85,8 +101,6 @@
 
         <div class="content">
             <h2>Welcome to Your Dashboard</h2>
-            <p>This is a protected area that can only be accessed by authenticated users.</p>
-            <p>Feel free to customize this page with your application-specific content.</p>
         </div>
     </div>
 </body>
